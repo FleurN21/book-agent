@@ -1,55 +1,85 @@
 ---
 name: outline
-description: Create or refine the YA mystery story outline using the 12 Step Mystery Formula
+description: Refine the story outline, restructure chapters, and develop scene beats
 user_invocable: true
 ---
 
 # Story Outline
 
-You are building or refining the story outline for a YA mystery novel.
+You are refining the story outline for an adult literary speculative fiction novel. The detailed outline exists in `Version 20.4.md` and the structured version lives in `manuscript/outline.md`.
 
-## If no outline exists yet (`manuscript/outline.md`):
+## The outline already exists.
 
-Walk the author through building one from scratch. Ask these questions in order, waiting for answers:
+This novel has a comprehensive outline. The `/outline` skill is for **refining**, not building from scratch.
 
-1. **The Crime:** What's the central mystery? (a disappearance, a theft, a death, a secret revealed?)
-2. **The Protagonist:** Who's our teen detective? What makes them the right person to investigate?
-3. **The Setting:** Where and when does this take place? (school, small town, summer camp, historical?)
-4. **The Stakes:** What happens if the mystery isn't solved? Why does it matter personally to the protagonist?
-5. **The Truth:** Who did it, why, and how? (Work backwards from the solution)
+## When the author asks to work on the outline:
 
-Then generate a full outline in `manuscript/outline.md` using this structure:
+1. Read the current outline (`Version 20.4.md` for detailed notes, `manuscript/outline.md` for structure)
+2. Ask what they want to change
+3. Make changes and explain the ripple effects
+
+## Common refinements:
+
+### Restructuring
+- Reorder chapters for better pacing (check `/pacing` analysis)
+- Split a chapter that's trying to do too much
+- Merge thin chapters
+- Move clue placements (update clue matrix)
+
+### Developing Underdeveloped Chapters
+Many later chapters in `Version 20.4.md` are sparse notes. When asked to develop them:
+- Read surrounding chapters for context and momentum
+- Identify what the chapter must accomplish (mystery, character, theme)
+- Flesh out to the same level of detail as earlier chapters
+- Flag `<<TBC>>` decisions for the author
+
+### Strengthening Story Beats
+- Ensure every chapter has a clear **purpose** (what changes?) and a **hook** (why turn the page?)
+- Check that the four-act structure is balanced
+- Verify the midpoint reversal lands with enough force
+- Ensure the final act earns its devastating ending
+
+### Managing Open Questions
+The outline contains many `<<TBC>>`, `<<Note:>>`, and `**BOLD SECTION**` markers. When working with these:
+- Catalogue them in `manuscript/notes/tbd-decisions.md`
+- When the author resolves one, update both the outline and the TBD file
+- Don't resolve them unilaterally — present options and let the author decide
+
+## Outline structure in `manuscript/outline.md`:
 
 ```markdown
 # [Working Title]
 
 ## Premise
-One-paragraph elevator pitch.
+One-paragraph summary.
 
-## The Solution (SPOILER -- author eyes only)
-Who did it, why, how, and what evidence exists.
+## The Solution (SPOILER)
+Full mystery solution.
 
-## Character Web
-Brief list: protagonist, victim, 3-5 suspects (each with motive, means, opportunity), key allies.
+## Four-Act Structure
+
+### Act I: The Inspection (Prologue–Ch 5)
+[Act summary]
+
+### Act II-A: The Investigation (Ch 6–Ch 13)
+[Act summary]
+
+### Act II-B: The Conspiracy (Ch 14–Ch 22)
+[Act summary]
+
+### Act III: The Truth (Ch 23–End)
+[Act summary]
 
 ## Chapter-by-Chapter Outline
 For each chapter:
 ### Chapter X: [Title]
-- **Beat:** Which of the 12 mystery steps this serves
-- **Scene:** What happens (2-3 sentences)
-- **Clues:** What clues are planted or discovered
-- **Red herrings:** What misleads
-- **Character development:** What we learn about the protagonist or key characters
-- **Hook:** How the chapter ends to pull readers forward
+- **Act/Beat:** Which act and what structural role
+- **Scene:** What happens (2–3 sentences)
+- **Clues:** Planted or discovered
+- **Secrets:** What's revealed or withheld
+- **Character:** What we learn, who changes
+- **Hook:** How the chapter ends
+- **Open questions:** Any `<<TBC>>` items
 ```
 
-## If an outline already exists:
-
-Read `manuscript/outline.md` and ask the author what they want to change. Common refinements:
-- Reorder chapters for better pacing
-- Strengthen a weak suspect's motive
-- Add or move clue placements
-- Adjust the midpoint reversal
-- Rework the climax sequence
-
-After any changes, update the outline file and summarize what changed and why.
+After any changes, update `manuscript/outline.md`, flag clue matrix changes, and update `tbd-decisions.md` if open questions were resolved or created.

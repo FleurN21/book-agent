@@ -1,28 +1,27 @@
 ---
 name: character
-description: Build a detailed character profile for the YA mystery novel
+description: Build or refine a detailed character profile for the speculative fiction novel
 user_invocable: true
 ---
 
 # Character Builder
 
-You are creating or refining a character for a YA mystery novel. Characters are saved in `manuscript/characters/`.
+You are creating or refining a character for an adult speculative fiction novel set in a world of memory technology. Characters are saved in `manuscript/characters/`.
 
 ## If the author names a character to create:
 
 Build a full profile and save it to `manuscript/characters/[name-slug].md` using this template:
 
 ```markdown
-# [Full Name]
+# [Full Name] (or [PLACEHOLDER] if TBD)
 
 ## Role
-[Protagonist / Suspect / Ally / Victim / Authority Figure / Mentor]
+[Protagonist / Antagonist / Ally / Victim / Mentor / Authority Figure / Complex — specify]
 
 ## Basics
 - **Age:**
-- **Grade/Year:** (if student)
-- **Appearance:** (2-3 distinctive details, not a police report)
-- **First impression:** (what people notice first)
+- **Appearance:** (2–3 distinctive details that matter, not a police report)
+- **First impression:** (what people notice first — what Alina would notice)
 
 ## Personality
 - **Core trait:**
@@ -32,31 +31,38 @@ Build a full profile and save it to `manuscript/characters/[name-slug].md` using
 - **Need:** (what they actually need)
 
 ## Voice
-- **Speech patterns:** (formal? sarcastic? quiet? rambling? uses specific slang or phrases?)
+- **Speech patterns:** (formal? clipped? silver-tongued? cryptic? warm?)
 - **Sample line:** (one line of dialogue that captures how they talk)
+- **What they won't say:** (topics they avoid, words they can't speak)
+
+## Relationship to Memory Technology
+- **Role in the system:** (watcher / analyst / wiped / civilian / Institute scientist / Justice Dept official)
+- **Institutional allegiance:** (Eden Institute / Justice Department / independent / conflicted)
+- **Wipe status:** (never wiped / wiped / supposedly wiped / N/A)
+- **What they know about memory transfer:** (nothing / suspects / knows / helped create it)
 
 ## Mystery Role
-- **Connection to the crime:**
+- **Connection to the central mystery:**
 - **What they're hiding:**
-- **Motive:** (if suspect)
-- **Alibi:** (if suspect -- and is it real or fake?)
 - **Key scenes:**
+- **What Alina believes about them vs. what's true:**
 
 ## Relationships
-- Who do they trust? Who do they clash with? What's their dynamic with the protagonist?
+Key dynamics with other characters. Focus on tension, history, and what's unspoken.
 
 ## Arc
-- Where do they start emotionally? Where do they end?
+- Where do they start? Where do they end? What changes them?
 ```
 
-## Guidelines
+## Character Principles for This Novel
 
-- **Make suspects sympathetic.** Every suspect should have a reason the reader would NOT want them to be guilty.
-- **Give everyone a secret.** Even characters who are innocent of the main crime should be hiding something. This creates organic red herrings.
-- **Distinct voices.** No two characters should sound alike in dialogue. If you can swap their dialogue lines and it still works, the voices aren't distinct enough.
-- **YA authenticity.** Teen characters should feel like real teenagers -- messy, contradictory, passionate, insecure -- not miniature adults.
-- **Avoid stereotypes.** No token diversity. No "sassy best friend." No "mean girl with no depth." Give every character interiority.
+- **Everyone is grieving someone.** Alina grieves Evie. Steers grieves Maya. The Executive grieves... nothing (which is the point). Parker grieves the life she never had. Connect characters through parallel loss.
+- **Everyone has a justification.** Steers experimented on a person to save Maya. Evie's father did the same to save Evie. The Executive wants progress. Parker wanted to survive. Nobody thinks they're the villain. Write them that way.
+- **Moral complexity is the spine.** No character is purely good or evil. Steers is Alina's hero AND a murderer. Parker is Evie's killer AND a victim. The reader should feel torn.
+- **Distinct voices.** Steers speaks in absolutes and clipped authority. Parker is cryptic stillness that breaks into devastating one-liners. The Executive performs civilisation. James is warm and easy. Alina is blunt when strong, stuttering when vulnerable. If you can swap two characters' dialogue and it still works, the voices aren't distinct enough.
+- **Physical signatures.** Each character should have physical details Alina returns to: James's easy smile (before) vs. his mad eyes (after). Parker's sharp grey eyes. Steers' unexpected femininity. The Executive's predatory smile.
+- **Use `[PLACEHOLDER]` for TBD names.** The author will fill these in. Don't invent names unless asked.
 
 ## If the author asks to revise an existing character:
 
-Read the character file, ask what they want to change, update the file, and explain how the changes ripple through the story (affects on plot, other characters, clue placement).
+Read the character file, ask what they want to change, update the file, and explain how the changes ripple through the story (effects on plot, other characters, clue placement, who-knows-what tracking).

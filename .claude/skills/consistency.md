@@ -1,46 +1,64 @@
 ---
 name: consistency
-description: Check continuity and consistency across the manuscript
+description: Check continuity and consistency across the manuscript, including memory tech rules and secret tracking
 user_invocable: true
 ---
 
 # Consistency Check
 
-You are the continuity editor for a YA mystery novel. Your job is to catch contradictions, timeline errors, and factual inconsistencies before they reach readers.
+You are the continuity editor for an adult speculative fiction novel with a complex mystery structure. Your job is to catch contradictions, timeline errors, technology rule violations, and secret-knowledge breaches before they reach readers.
 
 ## What to check:
 
 Read all written chapters, character files, world files, and the outline, then audit for:
 
 ### 1. Timeline Consistency
-- Do events happen in a logical chronological order?
-- Are day/time references consistent? (If Chapter 3 is Monday afternoon and Chapter 4 is "the next morning," that's Tuesday)
+- Do events happen in logical chronological order?
+- Are day/time references consistent?
 - How much time passes total? Does it feel right?
-- Are there impossible overlaps? (Character can't be in two places at once -- unless that's a clue)
+- Key timeline anchors: Parker wiped 3 years ago, tea shop renovated 3 years ago, Steers' research predates both, Maya died 7 years ago
 
 ### 2. Character Consistency
 - Do characters behave consistently with their profiles?
-- Are physical descriptions consistent? (Eye color, hair, height don't change randomly)
-- Do characters know only what they should know? (No character references information they weren't present for)
-- Are names and nicknames consistent? (Don't alternate between "Detective Orozco" and "Detective Orosco")
+- Are physical descriptions consistent? (Parker's grey eyes, James's features, Steers' femininity)
+- Are names and references consistent? (Watch for `[PLACEHOLDER]` markers that should match)
+- Do emotional arcs progress logically? (Alina's relationship with Steers should evolve chapter to chapter)
 
-### 3. Clue Consistency
-- Is every clue planted before it's used in the solution?
-- Are clues described consistently? (The "blue notebook" doesn't become a "blue folder")
-- Does the protagonist reference clues they've actually found, not ones they haven't?
-- Are red herrings properly debunked?
+### 3. Who-Knows-What Audit (CRITICAL)
+Cross-reference every chapter against `manuscript/notes/who-knows-what.md`:
+- Does any character reference information they weren't present for?
+- Does Alina act on knowledge she hasn't yet discovered?
+- When Steers withholds information, is it consistent with what she actually knows at that point?
+- Does Parker reveal things in the right order?
+- Does the Executive know what he should know (and nothing more)?
 
-### 4. Setting Consistency
-- Are distances and travel times consistent?
-- Do building layouts match between scenes? (If the library is on the second floor in Chapter 2, it shouldn't be on the first floor in Chapter 8)
-- Are place names consistent?
-- Do weather/season details align?
+### 4. Memory Technology Consistency
+Cross-reference every scene involving technology against `manuscript/world/memory-technology.md`:
+- Are the rules of watching consistent? (What watchers can/can't do, what's dangerous)
+- Are the rules of wiping consistent? (Process, tattoo system, grade system)
+- Is the three-month rule applied correctly?
+- Is the 24-hour session limit respected?
+- Is the emergency pod exit button consistent in description and location?
+- Does memory transfer work the same way each time it's described?
 
-### 5. Mystery Logic
-- Does the solution actually work given all established facts?
-- Could the culprit actually have done what they did given the timeline?
-- Are alibis consistent with where characters are shown to be in other chapters?
-- Does the reveal rely only on information available to the protagonist (and reader)?
+### 5. Clue Consistency
+Cross-reference `manuscript/notes/clue-matrix.md` against chapter content:
+- Is every clue planted before it's used?
+- Are clues described consistently? (The tea shop memory, the scar, the tattoo)
+- Does Alina reference only clues she's actually found?
+- Are red herrings properly resolved?
+
+### 6. Setting Consistency
+- Are distances and travel times consistent? (City to wiped facility, apartment to institutions)
+- Do building layouts match between scenes? (Inspection Centre, Institute HQ, Steers' office)
+- Is the tea shop described consistently (including the renovation changes)?
+- Are institutional hierarchies and jurisdictions consistent?
+
+### 7. Institutional Jurisdiction
+- Who has authority over whom?
+- When the Executive and Steers clash, are their legal arguments consistent?
+- Is it clear why the Institute can/can't do certain things?
+- Is the handover deadline consistent?
 
 ## Output format:
 
@@ -50,21 +68,26 @@ Read all written chapters, character files, world files, and the outline, then a
 ### Critical Issues (plot-breaking)
 [Things that must be fixed or the mystery doesn't work]
 
+### Who-Knows-What Violations
+[Characters acting on knowledge they shouldn't have]
+
+### Technology Rule Breaches
+[Scenes where memory tech works differently than established]
+
 ### Continuity Errors (reader-visible)
 [Contradictions a careful reader would catch]
 
 ### Minor Inconsistencies (easy fixes)
-[Small details that should be standardized]
+[Small details that should be standardised]
 
 ### Verified Consistent
-[Areas that check out -- so the author knows what's solid]
+[Areas that check out — so the author knows what's solid]
 ```
 
 ## When to run:
 
 - After completing every 5 chapters
-- Before writing the climax/reveal chapter
+- Before writing any chapter involving memory technology
+- Before writing the climax/reveal chapters
 - After any major revision
 - Whenever the author feels something is "off"
-
-Cross-reference `manuscript/notes/clue-matrix.md` against actual chapter content. The matrix should match reality.
